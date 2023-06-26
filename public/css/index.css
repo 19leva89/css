@@ -95,7 +95,7 @@ p.susid ~ p {
 
 /* Завдання №6: Змінити колір тексту на червоний у блоках div, які єдині в своєму батьківському елементі section */
 /* Використовуйте Селектор одиничної дитини :only-child */
-section div:only-child {
+.only-child-task div:only-child {
   color: red;
 }
 
@@ -173,12 +173,12 @@ section div:only-child {
 /* Завдання №9. Зробіть першу букву заголовків червоним кольором */
 /* Використовуйте селектор псевдоелементу першої літери */
 .lesson-three-task-nine h2::first-letter {
-  color: rgb(17, 16, 16);
+  color: red;
 }
 
 /* Завдання №10. Задайте першому рядку жовтий фон */
 /* Використовуйте селектор псевдоелементу першого рядка */
-.lesson-three-task-ten p::first-line {
+.lesson-three-task-ten p:first-child::first-line {
   background: yellow;
 }
 
