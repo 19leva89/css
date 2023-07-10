@@ -1,0 +1,120 @@
+/* :root {
+  background: purple;
+}
+
+html {
+  max-width: 720px;
+  background: blue;
+}
+
+body {
+  background: #fff;
+}
+
+* {
+  color: red;
+}
+
+.box {
+  background: rgb(77, 75, 75);
+}
+
+#user em {
+  color: blue;
+} */
+
+.card-dark {
+  background: rgb(224, 217, 217);
+}
+
+.item {
+  color: green;
+}
+
+.item:first-child {
+  color: blue;
+}
+
+.item:last-child {
+  color: rgb(211, 11, 77);
+}
+
+.item:first-of-type {
+  color: rgb(197, 99, 18);
+}
+
+.item:last-of-type {
+  color: rgb(13, 226, 216);
+}
+
+.item:nth-child(2) {
+  color: rgb(195, 247, 8);
+}
+
+.input-dark {
+  background: rgb(146, 146, 146);
+}
+
+.input-dark[required] {
+  background: rgb(214, 2, 2);
+}
+
+.input-dark[type='number'] {
+  background: rgb(9, 219, 37);
+}
+
+#test:target {
+  color: red;
+}
+
+.reference:link {
+  color: red;
+}
+
+.reference:hover {
+  color: green;
+}
+
+.card:hover {
+  background: rgb(219, 219, 219);
+}
+
+.reference:active {
+  color: purple;
+}
+
+.card:active {
+  background: purple;
+}
+
+input {
+  background-color: gray;
+}
+
+input:focus {
+  background-color: red;
+}
+
+.card:focus-within {
+  background-color: rgb(167, 166, 166);
+}
+
+.card:lang(en) > span::after {
+  content: ' (en)';
+}
+
+button {
+  background-color: greenyellow;
+}
+
+button:enabled {
+  background-color: rgb(9, 224, 38);
+}
+
+button:disabled {
+  background-color: aqua;
+}
+
+.inp:read-write {
+  background-color: blue;
+}
