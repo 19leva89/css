@@ -49,7 +49,7 @@
   width: fit-content;
 }
 
-.page_block:not(:last-of-type) {
+.page_block:not(:last-child) {
   margin-bottom: 80px;
 }
 
@@ -144,4 +144,148 @@
   color: #212529;
   font-size: 16px;
   font-weight: 400;
+}
+
+.preview_category_1 {
+  color: #007bff;
+}
+
+.preview_category_2 {
+  color: #198754;
+}
+
+.preview_category_3 {
+  color: #ff0000;
+}
+
+.preview_category_4 {
+  color: #ff7a00;
+}
+
+.list_title {
+  font-size: 32px;
+  font-weight: 500;
+  color: #212529;
+  margin: 0;
+}
+
+.list_header {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 40px;
+}
+
+.list_aside {
+  margin-left: 40px;
+}
+
+.category_button {
+  color: #6c757d;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 32px;
+  border: 1px solid #6c757d;
+  padding: 8px 12px 8px 12px;
+  line-height: 24px; /* 150% */
+}
+
+.category_button:hover {
+  background: #6c757d13;
+}
+
+.category_list {
+  text-align: right;
+}
+
+.list > *:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.post {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.post > *:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.post_title {
+  display: block;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 100%; /* 27px */
+  color: #212529;
+}
+
+.post_info {
+  color: #999;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.post_author {
+  color: #0050ff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.post_description {
+  color: #212529;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+}
+
+.list_aside > *:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.about {
+  background: #f8f9fa;
+  padding: 24px;
+}
+
+.about_title {
+  color: #212529;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.about_text {
+  color: #212529;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 170%;
+}
+
+.link_list {
+  padding: 24px;
+}
+
+.link_list > *:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.link_title {
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
+  color: #212529;
+}
+
+.link_item {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  color: #007bff;
+  text-decoration: none;
+}
+
+.link_item:hover {
+  text-decoration: underline;
 }
