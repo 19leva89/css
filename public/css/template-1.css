@@ -152,3 +152,15 @@
 .plans_card:nth-child(2) > .card {
   background: red;
 }
+
+.hero_text {
+  background-image: url('/img/purple-flowers.png');
+}
+
+.card_block {
+  list-style-image: url('/fav/favicon.ico');
+}
+
+.card_description_item {
+  display: list-item;
+}
