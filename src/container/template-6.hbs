@@ -11,26 +11,16 @@
 </header>
 
 <main class="main">
-	{{#with messages}}
-		<div class="messages">
-			<h1 class="messages_title">{{title}}</h1>
-			
-			{{#each list}}
-				<div class="msg">
-					<strong class="msg_name">{{name}}</strong>
-					<p class="msg_text">{{message}}</p>
-					<span class="msg_day">{{day}}</span>
-				</div>
-			{{/each}}
-
-			<a href="#" class="messages_link">All messages</a>
+	{{#with info}}
+		<div class="info">
+			<h2 class="info_title">{{title}}</h2>
+			<p class="info_description">{{description}}</p>
 		</div>
 	{{/with}}
-	
+		
 	{{#with form}}
 		<form class="form">
-			<h2 class="form_title">{{title}}</h2>
-
+			
 			<div class="form_input_list">
 				{{#each inputs}}
 					<input type="{{type}}" placeholder="{{placeholder}}" class="form_input" name="{{name}}" id="form_input_{{id}}">
@@ -48,16 +38,49 @@
 		</form>
 	{{/with}}
 	
-
 </main>
 
-<div class="advantages">
-	{{#each advantages}}
-		<div>
-			<strong>{{title}}</strong>
-			<p>{{text}}</p>
+{{#with updates}}
+		<div class="updates">
+			<h1 class="updates_title">{{title}}</h1>
+			
+			{{#each list}}
+				<div class="media">
+					<svg class="media_icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+						<path d="M32 0H0V32H32V0Z" fill="#007BFF"/>
+					</svg>
+
+					<div class="media_body">
+						<strong class="media_name">@{{nickname}}</strong>
+						<p class="media_text">{{description}}</p>
+					</div>
+				</div>
+			{{/each}}
+
+			{{#with show_all}}
+				<a href="{{url}}" class="show_all">{{text}}</a>
+			{{/with}}
+			
 		</div>
-	{{/each}}
+	{{/with}}
+
+
+
+<div class="feedback">
+	{{#with expirience}}
+		<div class="feedback_badge">{{badge}}</div>
+		<h1 class="feedback_title">{{title}}</h1>
+			
+		<div class="feedback_field">
+			{{#each list}}
+				<div class="feedback_card">
+					<strong class="feedback_name">{{name}}</strong>
+					<p class="feedback_details">{{details}}</p>
+				</div>
+			{{/each}}
+		</div>
+
+	{{/with}}
 </div>
 
 <footer class="footer">
