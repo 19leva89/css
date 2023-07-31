@@ -52,7 +52,6 @@
   width: 100%;
   max-width: var(--page-width);
   top: 0;
-  /* left: calc(50% - (var(--page-width) / 2)); */
   background-color: var(--color-white);
   z-index: 1;
 }
@@ -97,9 +96,10 @@
 }
 
 .footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   padding: var(--space-l) 0;
   border-top: 1px solid var(--color-border);
-  display: flex;
   justify-content: space-between;
 }
 
@@ -119,7 +119,10 @@
 }
 
 .main {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, min-content);
+  grid-template-areas: 'messages messages form' 'advantages advantages advantages';
   width: 100%;
   justify-content: center;
   align-items: flex-start;
@@ -127,8 +130,7 @@
 }
 
 .messages {
-  width: 100%;
-  max-width: 620px;
+  grid-area: messages;
   background-color: var(--color-white);
   padding: var(--space-l);
   border-radius: var(--border-radius-d);
@@ -191,11 +193,18 @@
 }
 
 .advantages {
-  display: flex;
+  display: grid;
+  grid-area: advantages;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  );
+  grid-template-rows: 1fr;
   gap: 24px;
 }
 
-.advantages > div {
+.advantages > div,
+.advantage {
   display: flex;
   flex-direction: column;
   border: 1px solid #e4eaf2;
@@ -205,21 +214,22 @@
   width: 100%;
 }
 
-.advantages > div > strong {
+.advantages > div,
+.advantage > strong {
   font-size: 18px;
   color: var(--color-title);
   font-weight: var(--weight-title);
 }
 
-.advantages > div > p {
+.advantages > div,
+.advantage > p {
   font-size: var(--size-d);
   color: #767676;
   line-height: 150%;
 }
 
 .form {
-  width: 100%;
-  max-width: 340px;
+  grid-area: form;
   background-color: var(--color-white);
   padding: var(--space-l);
   border-radius: var(--border-radius-d);
@@ -306,4 +316,8 @@
   color: var(--color-title);
   font-size: var(--size-d);
   cursor: pointer;
+}
+
+.advantage {
+  height: 100%;
 }
