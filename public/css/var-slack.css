@@ -2,6 +2,7 @@
   --color-white: #fff;
   --color-black: #000;
   --color-primary: #611f69;
+  --color-light: #f4ede4;
 
   --page-width-big: 1260px;
   --page-width-medium: 1000px;
@@ -19,6 +20,9 @@
   --size-1: 14px;
   --size-2: 18px;
   --size-3: 22px;
+  --size-4: 26px;
+  --size-5: 30px;
+  --size-6: 34px;
 
   --radius-1: 4px;
 
@@ -26,4 +30,6 @@
   --opacity-2: 0.3;
 
   --transition-1: 0.7s;
+
+  --line-height: 1.5em;
 }
